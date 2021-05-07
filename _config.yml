@@ -12,7 +12,11 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
-# Site settings
+
+#################
+# SITE SETTINGS #
+#################
+
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
@@ -26,14 +30,151 @@ description: >- # this means to ignore newlines until "baseurl:"
   Personal blog on Tech Art, Game Environments, Photography & 日本語
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://techartapprentice.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: merwyn_lim
-github_username: merwynl
 
-# Build settings
+##################
+# BUILD SETTINGS #
+##################
+
+# Theme Settings
 remote_theme: "mmistakes/minimal-mistakes@4.22.0"
-# theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "dark" # "default"
-locale: ja-JP
+minimal_mistakes_skin: "default" # "dark"
+
+# Locale
+locale: en-GB
+# locale: ja-JP
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      show_date: true
+      read_time: true
+      comments: true
+      share: false
+      related: false
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      share: true
+
+# Comments
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "your-disqus-shortname"
+
+# RSS Feed
+atom_feed:
+  #  path: "http://feeds.feedburner.com/youFeedname"
+  hide: true
+
+# Search
+search: false
+search_provider: algolia
+
+# Algolia Search
+algolia:
+  application_id: 80WKHL53GU # YOUR_APPLICATION_ID
+  index_name: techartapprentice # YOUR_INDEX_NAME
+  search_only_api_key: d5ffe85889e7b45737e38779b1acea2f # YOUR_SEARCH_ONLY_API_KEY
+  powered_by: false # true (default), false
+
+# Open Graph
+og_image: /assets/images/site-logo.png # Open Graph/Twitter default site image
+
+# Socials
+social:
+  type: Person # Person or Organization (defaults to Person)
+  name: Merwyn L # If the user or organization name differs from the site's name
+  links:
+    - "https://twitter.com/merwyn_lim"
+    - "https://futurepixels.net"
+    - "https://artstation.com/merwynlim"
+    - "https://www.linkedin.com/in/merwynlim"
+
+# Social Media
+twitter:
+  username: &twitter "merwyn_lim"
+github:
+  username: &github "techartapprentice"
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-DF21QLYE41"
+    anonymize_ip: true # default
+
+# Author
+author:
+  name: "Merwyn L"
+  avatar: "/assets/images/site-logo.png"
+  bio: "Technical Environment/Lighting Artist with over 5 years experience crafting & optimizing digital assets."
+  location: "Australia"
+  email: merwyn.lim@outlook.jp
+  links:
+    - label: "Future Pixels"
+      icon: "fas fa-link"
+      url: "https://futurepixels.net"
+    - label: "Artstation"
+      icon: "fab fa-artstation"
+      url: "https://artstation.com/merwynlim"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/merwynl"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/merwyn_lim"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/merwynlim"
+    - label: "Mail"
+      icon: "fas fa-envelope"
+      url: "mailto:merwyn.lim@outlook.jp"
+
+# Footer
+footer:
+  links:
+    - label: "Future Pixels"
+      icon: "fas fa-link"
+      url: "https://futurepixels.net"
+    - label: "Artstation"
+      icon: "fab fa-artstation"
+      url: "https://artstation.com/merwynlim"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/merwynl"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/merwyn_lim"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/merwynlim"
+    - label: "Mail"
+      icon: "fas fa-envelope"
+      url: "mailto:merwyn.lim@outlook.jp"
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Outputting
+# permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
+
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -42,6 +183,99 @@ plugins:
   - jekyll-feed
   - jekyll-data
   - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jemoji
+  - jekyll-feed
+  - jekyll-data
+  - jekyll-include-cache
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .vscode
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

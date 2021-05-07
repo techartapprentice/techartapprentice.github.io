@@ -20,6 +20,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
   gem "jekyll-gist"
+  gem "jekyll-archives"
   gem "jemoji"
   gem "jekyll-algolia"
   gem "jekyll-feed", "~> 0.12"
