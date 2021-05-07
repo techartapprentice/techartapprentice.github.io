@@ -30,6 +30,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Personal blog on Tech Art, Game Environments, Photography & 日本語
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://techartapprentice.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+repository: "techartapprentice.github.io"
 
 ##################
 # BUILD SETTINGS #
@@ -50,28 +51,78 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: false
-      show_date: true
-      read_time: true
+      author_profile: true
       comments: true
-      share: false
+      layout: single
+      read_time: false
       related: false
+      share: true
+      show_date: false
   # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
-      layout: single
       author_profile: false
-      read_time: true
+      layout: single
+      sidebar:
+        nav: "docs"
+  # _python
+  - scope:
+      path: "python"
+      type: pages
+    values:
+      author_profile: false
+      layout: single
       share: true
+      sidebar:
+        nav: "docs"
+  # _houdini
+  - scope:
+      path: "houdini"
+      type: pages
+    values:
+      author_profile: false
+      layout: single
+      share: true
+      sidebar:
+        nav: "docs"
+  # _lighting
+  - scope:
+      path: "lighting"
+      type: pages
+    values:
+      author_profile: false
+      layout: single
+      share: true
+      sidebar:
+        nav: "docs"
+  # _techart
+  - scope:
+      path: "techart"
+      type: pages
+    values:
+      author_profile: false
+      layout: single
+      share: true
+      sidebar:
+        nav: "docs"
+  # _resources
+  - scope:
+      path: "resources"
+      type: pages
+    values:
+      author_profile: false
+      layout: single
+      share: true
+      sidebar:
+        nav: "docs"
 
 # Comments
 comments:
   provider: "disqus"
   disqus:
-    shortname: "your-disqus-shortname"
+    shortname: "techartapprentice"
 
 # RSS Feed
 atom_feed:
@@ -90,23 +141,24 @@ algolia:
   powered_by: false # true (default), false
 
 # Open Graph
-og_image: /assets/images/site-logo.png # Open Graph/Twitter default site image
+og_image: /assets/images/main/site-logo.png # Open Graph/Twitter default site image
 
 # Socials
 social:
   type: Person # Person or Organization (defaults to Person)
-  name: Merwyn L # If the user or organization name differs from the site's name
+  name: Merwyn Lim # If the user or organization name differs from the site's name
   links:
     - "https://twitter.com/merwyn_lim"
     - "https://futurepixels.net"
     - "https://artstation.com/merwynlim"
     - "https://www.linkedin.com/in/merwynlim"
 
-# Social Media
+# Social Sharing
 twitter:
   username: &twitter "merwyn_lim"
 github:
   username: &github "techartapprentice"
+og_image                 : # Open Graph/Twitter default site image
 
 # Analytics
 analytics:
@@ -117,13 +169,12 @@ analytics:
 
 # Author
 author:
-  name: "Merwyn L"
-  avatar: "/assets/images/site-logo.png"
-  bio: "Technical Environment/Lighting Artist with over 5 years experience crafting & optimizing digital assets."
-  location: "Australia"
-  email: merwyn.lim@outlook.jp
+  name: "Merwyn Lim"
+  avatar: "/assets/images/main/site-logo.png"
+  bio: "Technical Environment/Lighting Artist - My personal blog on Personal blog on game environments, tech art, photography & 日本語"
+  # email: merwyn.lim@outlook.jp
   links:
-    - label: "Future Pixels"
+    - label: "Website"
       icon: "fas fa-link"
       url: "https://futurepixels.net"
     - label: "Artstation"
@@ -145,7 +196,7 @@ author:
 # Footer
 footer:
   links:
-    - label: "Future Pixels"
+    - label: "Website"
       icon: "fas fa-link"
       url: "https://futurepixels.net"
     - label: "Artstation"
@@ -170,9 +221,9 @@ sass:
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Outputting
-# permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
+permalink: /:categories/:title/
+paginate: 7 # amount of posts to show
+paginate_path: /page:num/
 
 # Plugins
 plugins:
@@ -210,6 +261,13 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
 
 # Reading Files
 include:

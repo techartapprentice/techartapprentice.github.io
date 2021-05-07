@@ -1,73 +1,111 @@
 # main links
 main:
   - title: "Python"
-    url: /python/
+    url: /python/core/
   - title: "Houdini"
-    url: /houdini/
+    url: /houdini/context/
   - title: "Unreal"
-    url: /unreal/
+    url: /lighting/workflows/
   - title: "Tech Art"
-    url: /techart/
+    url: /techart/shaders/
   - title: "Resources"
-    url: /resources/
+    url: /resources/external-links/
   - title: "Release Notes"
-    url: /releases/
+    url: /notes/
   - title: "About"
     url: /about/
 
-# documentation links
-about:
-  - title: Getting Started
+# pages links
+docs:
+  - title: Python
     children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
-  - title: Customization
+      - title: "Core concepts"
+        url: /python/core/
+      - title: "Advanced Concepts"
+        url: /python/advanced/
+      - title: "Creating UI's"
+        url: /python/guis/
+      - title: "Auto-completion in VS Code"
+        url: /python/autocomplete
+      - title: "Auto-renaming files"
+        url: /python/autorenamer/
+      - title: "Auto project folder structure"
+        url: /python/autoproject/
+      - title: "PyMel"
+        url: /python/pymel/
+      - title: "Unreal Python"
+        url: /python/ue4python/
+      - title: "Houdini"
+        url: /python/hpython/
+      - title: "Batch export in Marmoset"
+        url: /python/marmoset/
+      - title: "Procedural workflows with Substance"
+        url: /python/substance/
+      - title: "Quickbits"
+        url: /python/quickbits/
+  - title: Houdini
     children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Overriding Theme Defaults"
-        url: /docs/overriding-theme-defaults/
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
-  - title: Content
+      - title: "Houdini Context"
+        url: /houdini/context/
+      - title: "Modelling in Houdini"
+        url: /houdini/modelling/
+      - title: "VOPs"
+        url: /houdini/vops/
+      - title: "VEX"
+        url: /houdini/vex/
+      - title: "TOPs"
+        url: /houdini/tops/
+      - title: "Houdini and Substance Designer"
+        url: /houdini/hsubstance/
+      - title: "Houdini Engine"
+        url: /houdini/hengine/
+  - title: Unreal Environment Lighting
     children:
-      - title: "Working with Posts"
-        url: /docs/posts/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/
-  - title: Extras
+      - title: "Lighting interiors & exteriors"
+        url: /lighting/workflows/
+      - title: "Atmospherics & volumetrics"
+        url: /lighting/atmospherics/
+      - title: "General photography techniques"
+        url: /lighting/photography/
+      - title: "Lighting tips & troubleshoot"
+        url: /lighting/troubleshoot/
+      - title: "Sequencer & Movie Render Queue"
+        url: /lighting/cinematics/
+      - title: "LUT Creation"
+        url: /lighting/luts/
+      - title: "Raytracing"
+        url: /lighting/rt/
+  - title: Tech Art
     children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
-  - title: Meta
+      - title: "UE4 Shaders"
+        url: /techart/shaders/
+      - title: "Terrain Auto-Material"
+        url: /techart/automaterial/
+      - title: "Snow"
+        url: /techart/snow/
+      - title: "Scanline effect"
+        url: /techart/scanline/
+      - title: "Recreating The Division's Echo effect"
+        url: /techart/echo/
+      - title: "Unreal's Water Feature"
+        url: /techart/ue4water/
+      - title: "Puddles & raindrops"
+        url: /techart/puddle/
+      - title: "RVT's"
+        url: /techart/rvt/
+      - title: "Unreal Insights"
+        url: /techart/ue4insights/
+      - title: "Setting up a P4 repo"
+        url: /techart/p4repo/
+      - title: "Setting up shared P4 streams"
+        url: /techart/sharedStreams/
+  - title: Resources
     children:
-      - title: "History"
-        url: /docs/history/
-      - title: "Contributing"
-        url: /docs/contributing/
-      - title: "Old 2.2 Docs"
-        url: /docs/docs-2-2/
-      - title: "License"
-        url: /docs/license/
-      - title: "Terms &amp; Privacy Policy"
-        url: /terms/
+      - title: "External Links"
+        url: /resources/external-links/
+      - title: "Downloads"
+        url: /resources/downloads/
+  - title: Release Notes
+    url: /notes/
+  - title: About
+    url: /about/
