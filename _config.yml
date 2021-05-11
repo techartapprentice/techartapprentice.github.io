@@ -30,14 +30,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   Personal blog on Tech Art, Game Environments, Photography & 日本語
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://techartapprentice.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-repository: "techartapprentice.github.io"
+repository: "techartapprentice/techartapprentice.github.io"
 
 ##################
 # BUILD SETTINGS #
 ##################
 
 # Theme Settings
-remote_theme: "mmistakes/minimal-mistakes@4.22.0"
+# theme: "minimal-mistakes-jekyll"
+# remote_theme: "mmistakes/minimal-mistakes@4.22.0"
 minimal_mistakes_skin: "default" # "dark"
 
 # Locale
