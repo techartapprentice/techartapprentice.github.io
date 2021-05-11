@@ -1,8 +1,12 @@
 ---
-title: "Welcome to Jekyll!"
+title: "Shuriken Toolkit Dev Log 0.0.1"
 tags:
-  - Jekyll
-  - update
+  - Auto
+  - Automation
+  - Py
+  - Python
+  - Tkinter
+  - Tools
 ---
 
 For a while, I’ve been searching for a way to speed up my own personal workflow. Hotkeys and shortcuts are great but sometimes you might want to just click away if certain tools are close enough within reach. Plus there’s only so many tools you can quickly hotkey. Jumping back and forth between different DCC’s also means having to recall a lot of different hotkeys. That’s not a bad thing but someone just starting out may find, having to remember dozens and dozens of different hotkeys to be a little overwhelming.
@@ -11,7 +15,7 @@ One of the big reasons why I really like Maya’s Shelves system, It makes it re
 
 A couple of months back I started work on a custom toolset called Shuriken (name is placeholder for the moment) but I have been hesitant to talk about it because it’s still it’s very early stages of development. The inspiration for this tool comes off the back of using some really great one’s such as [froTools][frotools] and MJPolyTools.
 
-{% include figure image_path="/assets/images/002_toolkit/01.png" alt="" caption="" %}
+  <center><img src="/assets/images/002_toolkit/01.png" alt="shuriken" width="200"/></center>
 
 I’ve been developing the tool as a means to get more comfortable with Maya’s Python API but it also provided an opportunity to build something that could maybe someday be used in a much wider context.
 
@@ -53,12 +57,13 @@ pm.workspaceControl("Window", retain=False, floating=True, uiScript="UI()")
 
 I’m not using a separate UI file as I didn’t want to have to manage another file if I didn’t have to. However, if this tool ever gets big enough where I have to split it up into more separate modules then I might revisit the idea then. The above solution sits my current needs.
 
-There are a couple more great examples here.
+There are a couple more great examples [here][here].
 
-Kaine van Germet offers a much more in-depth dissection on how to use Workspace Controls with standard Qt layouts to create dockable windows. I opted to use Maya layouts instead as my needs here are far simpler.
+[Kaine van Germet][Kaine van Germet] offers a much more in-depth dissection on how to use Workspace Controls with standard Qt layouts to create dockable windows. I opted to use Maya layouts instead as my needs here are far simpler.
 
 Should I decide that this tool becomes useful enough to be released, I’ll consider using a more traditional software development approach for handling these dev logs. For now, I might continue with releasing updates in this format.
 
 
 [frotools]: https://www.froyok.fr/assets/frotools/
-
+[here]: https://python.hotexamples.com/examples/maya.cmds/-/workspaceControl/python-workspacecontrol-function-examples.html
+[Kaine van Germet]: https://kainev.com/qt-for-maya-dockable-windows/

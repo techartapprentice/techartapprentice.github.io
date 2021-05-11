@@ -1,13 +1,15 @@
 ---
 title: "Cyberpunk Bar Environment WIP #1"
-excerpt_separator: "<!--more-->"
 categories:
-  - Blog
+  - Game Art
+  - Materials
+  - Environment Art
 tags:
   - art
   - environment
   - game art
   - game environment
+  - 3d
   - 背景
   - ゲーム
   - ゲーム背景

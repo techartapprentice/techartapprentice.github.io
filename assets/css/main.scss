@@ -5,6 +5,7 @@
 @charset "utf-8";
 
 $sans-serif : -apple-system, "Nunito Sans", ".SFNSText-Regular", "San Francisco", "Droid Sans", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif-narrow : -apple-system, "Nunito Sans", ".SFNSText-Regular", "San Francisco", "Droid Sans", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace  : Consolas, Monaco, "Lucida Console", monospace;
 
 /* type scale */
@@ -34,6 +35,6 @@ html {
   }
 
   @include breakpoint($x-large) {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
