@@ -2,12 +2,12 @@
 main:
   - title: "Python"
     url: /python/core/
-  - title: "Houdini"
-    url: /houdini/context/
-  - title: "Unreal"
-    url: /lighting/workflows/
-  - title: "Tech Art"
-    url: /techart/shaders/
+  # - title: "Houdini"
+  #   url: /houdini/context/
+  # - title: "Unreal"
+  #   url: /lighting/workflows/
+  # - title: "Tech Art"
+  #   url: /techart/shaders/
   - title: "Resources"
     url: /resources/external-links/
   - title: "Release Notes"
