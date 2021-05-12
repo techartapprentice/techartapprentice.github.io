@@ -10,10 +10,10 @@ main:
   #   url: /techart/shaders/
   - title: "Resources"
     url: /resources/external-links/
-  - title: "Release Notes"
-    url: /notes/
-  - title: "About"
-    url: /about/
+  # - title: "Release Notes"
+  #   url: /notes/
+  # - title: "About"
+  #   url: /about/
 
 # pages links
 docs:
@@ -21,8 +21,8 @@ docs:
     children:
       - title: "Core concepts"
         url: /python/core/
-      - title: "Advanced Concepts"
-        url: /python/advanced/
+      # - title: "Advanced Concepts"
+      #   url: /python/advanced/
       # - title: "Creating UI's"
       #   url: /python/guis/
       # - title: "Auto-completion in VS Code"
