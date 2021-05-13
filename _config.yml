@@ -173,7 +173,7 @@ author:
   name: "Merwyn Lim"
   avatar: "/assets/images/main/site-logo.png"
   bio: "Technical Environment/Lighting Artist - My personal blog on Personal blog on game environments, tech art, photography & 日本語"
-  # email: merwyn.lim@outlook.jp
+  email: merwyn.lim@outlook.jp
   links:
     - label: "Website"
       icon: "fas fa-link"
