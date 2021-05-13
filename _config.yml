@@ -37,8 +37,7 @@ repository: "techartapprentice/techartapprentice.github.io"
 ##################
 
 # Theme Settings
-# theme: "minimal-mistakes-jekyll"
-# remote_theme: "mmistakes/minimal-mistakes@4.22.0"
+remote_theme: "mmistakes/minimal-mistakes@4.22.0"
 minimal_mistakes_skin: "default" # "dark"
 
 # Locale
@@ -173,7 +172,7 @@ author:
   name: "Merwyn Lim"
   avatar: "/assets/images/main/site-logo.png"
   bio: "Technical Environment/Lighting Artist - My personal blog on Personal blog on game environments, tech art, photography & 日本語"
-  email: merwyn.lim@outlook.jp
+  # email: merwyn.lim@outlook.jp
   links:
     - label: "Website"
       icon: "fas fa-link"
