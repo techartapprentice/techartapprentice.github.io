@@ -156,8 +156,8 @@ social:
 # Social Sharing
 twitter:
   username: &twitter "merwyn_lim"
-github:
-  username: &github "techartapprentice"
+# github:
+#   username: &github "techartapprentice"
 og_image                 : # Open Graph/Twitter default site image
 
 # Analytics
