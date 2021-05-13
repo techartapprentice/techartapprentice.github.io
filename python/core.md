@@ -4,7 +4,6 @@ permalink: /python/core/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
 last_modified_at: 2020-07-27
 toc: true
-toc_icon: "cog"
 ---
 
 ## Why Python?
