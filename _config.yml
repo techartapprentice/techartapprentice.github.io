@@ -174,12 +174,12 @@ author:
   bio: "Technical Environment/Lighting Artist - My personal blog on Personal blog on game environments, tech art, photography & 日本語"
   # email: merwyn.lim@outlook.jp
   links:
-    - label: "Website"
-      icon: "fas fa-link"
-      url: "https://futurepixels.net"
     - label: "Artstation"
       icon: "fab fa-artstation"
       url: "https://artstation.com/merwynlim"
+    - label: "Website"
+      icon: "fas fa-link"
+      url: "https://futurepixels.net"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/merwynl"
