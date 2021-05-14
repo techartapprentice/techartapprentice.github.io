@@ -1,18 +1,7 @@
 ---
 title: "Cyberpunk Bar Environment WIP #2"
-categories:
-  - Game Art
-  - Materials
-  - Environment Art
-tags:
-  - art
-  - environment
-  - game art
-  - game environment
-  - 背景
-  - ゲーム
-  - ゲーム背景
-  - 環境
+header:
+  teaser: /assets/images/001_cyberpunk/03.png
 ---
 
 The roof is finally back in! The proportions are feeling a lot better and I still managed to keep the majority of the shapes and framing that I originally intended. What’s more, things snap together perfectly now.

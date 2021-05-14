@@ -1,23 +1,7 @@
 ---
 title: "Trim Sheet WIP"
-categories:
-  - Game Art
-  - Materials
-  - Environment Art
-tags:
-  - art
-  - environment
-  - game art
-  - texture
-  - material
-  - substance
-  - marmoset
-  - 3d
-  - マテリアル
-  - 背景
-  - ゲーム
-  - ゲーム背景
-  - 環境
+header:
+  teaser: /assets/images/003_materials/01.jpg
 ---
 
 I've been working on some trim details for a personal project recently. The trims were modelled in Maya then baked inside Marmoset 4. I've been really interested to test their baker & their new texturing tools along with the ray trace engine.  I've been really pleased and impressed by the speed and accuracy of the bakes.  The results have been rendered both with Marmoset and Substance Designer. It needs a little roughing up but I'm pretty pleased with the results thus far. 

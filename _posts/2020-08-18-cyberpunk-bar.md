@@ -1,19 +1,7 @@
 ---
 title: "Cyberpunk Bar Environment WIP #1"
-categories:
-  - Game Art
-  - Materials
-  - Environment Art
-tags:
-  - art
-  - environment
-  - game art
-  - game environment
-  - 3d
-  - 背景
-  - ゲーム
-  - ゲーム背景
-  - 環境
+header:
+  teaser: /assets/images/001_cyberpunk/01.png
 ---
 
 I was starting to make some way in with an environment project that I had been working on in my spare time. Here’s a still from the last wip that I did:
