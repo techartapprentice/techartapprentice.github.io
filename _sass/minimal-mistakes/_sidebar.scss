@@ -184,7 +184,7 @@
   display: table-cell;
   vertical-align: middle;
   font-family: $sans-serif;
-  z-index: 20;
+  z-index: 10;
   cursor: pointer;
 
   li:last-child {
@@ -195,7 +195,7 @@
 
   .author__urls {
     span.label {
-      padding-left: 5px;
+      padding-left: 10px;
     }
   }
 
@@ -204,20 +204,20 @@
   }
 
   button {
-    position: relative;
+    // position: relative;
     margin-bottom: 0;
 
-    &:before {
-      @supports (pointer-events: none) {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-      }
-    }
+    // &:before {
+    //   @supports (pointer-events: none) {
+    //     content: '';
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     pointer-events: none;
+    //   }
+    // }
 
     &.open {
       &:before {
@@ -292,10 +292,10 @@
     }
   }
 
-  ul {
-    padding: 10px;
-    list-style-type: none;
-  }
+  // ul {
+  //   padding: 10px;
+  //   list-style-type: none;
+  // }
 
   li {
     white-space: nowrap;
