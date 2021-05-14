@@ -172,26 +172,14 @@ author:
   name: "Merwyn Lim"
   avatar: "/assets/images/main/site-logo.png"
   bio: "Technical Environment/Lighting Artist - My personal blog on Personal blog on game environments, tech art, photography & 日本語"
-  # email: merwyn.lim@outlook.jp
-  links:
-    - label: "Artstation"
-      icon: "fab fa-artstation"
-      url: "https://artstation.com/merwynlim"
-    - label: "Website"
-      icon: "fas fa-link"
-      url: "https://futurepixels.net"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/merwynl"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/merwyn_lim"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/merwynlim"
-    - label: "Mail"
-      icon: "fas fa-envelope"
-      url: "mailto:merwyn.lim@outlook.jp"
+  website: https://futurepixels.net
+  linkedin: merwynlim
+  artstation: merwynlim
+  github: merwynl
+  twitter: merwyn_lim
+  email: merwyn.lim@outlook.jp
+
+
 
 # Footer
 footer:
